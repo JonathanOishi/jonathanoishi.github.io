@@ -135,7 +135,7 @@ class _ProjectsGridState extends State<_ProjectsGrid> {
       _ProjectCard(
         title: 'MyFinancy',
         description:
-            'Aplicativo de controle financeiro pessoal desenvolvido em Android nativo. Permite gerenciar receitas e despesas, acompanhar saldo em tempo real e visualizar dados organizados. Projeto completo com foco em arquitetura limpa e persistência de dados.',
+            'Aplicativo de controle financeiro pessoal desenvolvido em Android nativo. Permite gerenciar receitas e despesas, acompanhar saldo em tempo real e visualizar dados organizados.',
         imageLink: 'assets/my_financy.png',
         githubUrl: 'https://github.com/JonathanOishi/MyFinances',
         technologies: [
@@ -152,7 +152,7 @@ class _ProjectsGridState extends State<_ProjectsGrid> {
       _ProjectCard(
         title: 'GeoTasks',
         description:
-            'Aplicativo de produtividade desenvolvido em Flutter com foco em organização de tarefas inteligentes. Possui autenticação, sincronização em nuvem e recursos de geolocalização para tarefas baseadas em contexto.',
+            'Desenvolvido em Flutter com foco em organização de tarefas inteligentes. Possui autenticação, sincronização em nuvem e recursos de geolocalização para tarefas baseadas.',
         imageLink: 'assets/geo_tasks.png',
         githubUrl: 'https://github.com/JonathanOishi/geo_tasks',
         technologies: [
@@ -189,7 +189,7 @@ class _ProjectsGridState extends State<_ProjectsGrid> {
 
     if (isMobile) {
       return SizedBox(
-        height: 520, // Altura ampliada para dar espaço ao Wrap de tecnologias sem espremer o botão
+        height: 520,
         child: PageView.builder(
           controller: _pageController,
           itemCount: cards.length,
@@ -213,7 +213,7 @@ class _ProjectsGridState extends State<_ProjectsGrid> {
         crossAxisCount: 3,
         crossAxisSpacing: AppSpacing.md,
         mainAxisSpacing: AppSpacing.md,
-        childAspectRatio: 0.58, // Proporção ajustada para evitar cortes de texto em telas desktop menores
+        childAspectRatio: 0.58,
       ),
       itemBuilder: (context, index) => cards[index],
     );
@@ -297,7 +297,7 @@ class _ProjectCardState extends State<_ProjectCard> {
                     const SizedBox(height: 6),
                     Text(
                       widget.description,
-                      maxLines: 4, // Permite ler mais do texto sem quebras bruscas
+                      maxLines: 4,
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
                         fontSize: 13,
@@ -308,7 +308,7 @@ class _ProjectCardState extends State<_ProjectCard> {
                     const SizedBox(height: 12),
                     Expanded(
                       child: SingleChildScrollView(
-                        physics: const NeverScrollableScrollPhysics(), // Mantém a estrutura rígida e limpa
+                        physics: const NeverScrollableScrollPhysics(),
                         child: Wrap(
                           spacing: 6,
                           runSpacing: 6,
@@ -335,7 +335,7 @@ class _ProjectCardState extends State<_ProjectCard> {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 16), // Garante um respiro elegante antes do botão
+                    const SizedBox(height: 16),
                     SizedBox(
                       width: double.infinity,
                       height: 40,
