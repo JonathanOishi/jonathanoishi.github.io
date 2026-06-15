@@ -23,7 +23,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
-  // Dicionário de chaves globais mapeadas para cada seção da sua página única (Single Page)
+  final ScrollController _scrollController = ScrollController();
+
   late final Map<String, GlobalKey> _sectionKeys = {
     HomeSectionIds.hero: GlobalKey(),
     HomeSectionIds.history: GlobalKey(),
@@ -36,7 +37,14 @@ class _HomePageState extends State<HomePage> {
     HomeSectionIds.footer: GlobalKey(),
   };
 
-  // Função centralizada de Scroll dinâmico com correção de sincronismo de frames
+  void _scrollToTop() {
+    _scrollController.animateTo(
+      0,
+      duration: const Duration(milliseconds: 650),
+      curve: Curves.easeInOutCubic,
+    );
+  }
+
   void _scrollToSection(String id) {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final key = _sectionKeys[id];
@@ -45,21 +53,23 @@ class _HomePageState extends State<HomePage> {
       if (context != null) {
         Scrollable.ensureVisible(
           context,
-          alignment:
-              0.0, // Garante que o topo do widget alinhe com o topo da tela
-          duration: const Duration(
-            milliseconds: 650,
-          ), // Velocidade de transição fluida
-          curve: Curves
-              .easeInOutCubic, // Curva suave de aceleração e desaceleração
+          alignment: 0.0,
+          duration: const Duration(milliseconds: 650),
+          curve: Curves.easeInOutCubic,
         );
       }
     });
   }
 
   void _onDrawerItemTap(String id) {
-    Navigator.of(context).pop(); // Fecha o menu lateral no Mobile
+    Navigator.of(context).pop();
     _scrollToSection(id);
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
   }
 
   @override
@@ -75,15 +85,14 @@ class _HomePageState extends State<HomePage> {
         onItemTap: _onDrawerItemTap,
       ),
       body: SingleChildScrollView(
+        controller: _scrollController,
         child: Column(
           children: [
-            // Preenchimento de segurança da barra superior do sistema operacional
             Container(
               height: systemPadding.top,
               color: AppColors.background,
             ),
 
-            // Barra de navegação principal (Menu Superior)
             Navbar(
               items: homeNavItems,
               onItemTap: _scrollToSection,
@@ -145,7 +154,7 @@ class _HomePageState extends State<HomePage> {
             KeyedSubtree(
               key: _sectionKeys[HomeSectionIds.footer],
               child: FooterSection(
-                onScrollToTop: () => _scrollToSection(HomeSectionIds.hero),
+                onScrollToTop: _scrollToTop,
               ),
             ),
 
