@@ -12,10 +12,10 @@ Olá Jonathan! 👋
 
 Tenho interesse em um orçamento.
 
-👤 Nome: $nome
-📧 Email: $email
+Nome: $nome
+Email: $email
 
-📝 Detalhes do projeto:
+Detalhes do projeto:
 $mensagem
 ''';
 
