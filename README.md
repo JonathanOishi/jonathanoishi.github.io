@@ -4,6 +4,16 @@ Portfólio pessoal desenvolvido em **Flutter Web**, projetado para apresentar mi
 
 🔗 **Site no ar:** [jonathanoishi.github.io](https://jonathanoishi.github.io)
 
+<p align="center">
+  <a href="https://github.com/JonathanOishi">
+    <img
+      src="https://i.ibb.co/BVLnW5kB/Gemini-Generated-Image-n24tcmn24tcmn24t-removebg-preview.png"
+      alt="Geo Tasks"
+      width="60%"
+    />
+  </a>
+</p>
+
 O objetivo deste projeto foi construir uma aplicação web com foco em performance, organização arquitetural e experiência do usuário, utilizando boas práticas de desenvolvimento e uma estrutura preparada para futuras evoluções.
 
 ## Sobre o Projeto
