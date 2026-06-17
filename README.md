@@ -7,7 +7,7 @@ Portfólio pessoal desenvolvido em **Flutter Web**, projetado para apresentar mi
 <p align="center">
   <a href="https://github.com/JonathanOishi">
     <img
-      src="https://i.ibb.co/BVLnW5kB/Gemini-Generated-Image-n24tcmn24tcmn24t-removebg-preview.png"
+      src="https://i.ibb.co/1Y2tnP11/Chat-GPT-Image-17-de-jun-de-2026-08-16-24-removebg-preview.png"
       alt="Geo Tasks"
       width="60%"
     />
