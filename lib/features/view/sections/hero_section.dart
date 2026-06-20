@@ -128,7 +128,7 @@ class _HeroTextContent extends StatelessWidget {
           SizedBox(
             width: metrics.textMaxWidth,
             child: Text(
-              'Transformando ideias complexas em experiências mobile refinadas. Especialista em ecossistema Flutter, Dart e integração robusta com Firebase.',
+              'Desenvolvedor Mobile focado em Flutter e Dart, criando aplicações modernas, performáticas e integradas ao Firebase, com paixão por transformar ideias em soluções reais.',
               textAlign: Responsive.isMobile(context)
                   ? TextAlign.center
                   : TextAlign.start,
