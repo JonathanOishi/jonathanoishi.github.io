@@ -83553,7 +83553,7 @@ l=A.Bd(l,q,A.b4(a,q,o).w.a.a<768?B.cd:B.aF)
 s=p.w
 o=A.b4(a,q,o).w.a.a<768?B.cd:B.aF
 r=t.p
-return A.jM(A.bZ(A.c([m,B.bm,l,B.bm,A.cp(A.bP("Transformando ideias complexas em experi\xeancias mobile refinadas. Especialista em ecossistema Flutter, Dart e integra\xe7\xe3o robusta com Firebase.",q,q,q,A.dq(q,q,B.bf,q,q,q,q,q,q,q,q,p.f,q,q,q,q,1.55,!0,q,q,q,q,q,q,q,q),o,q),q,s),B.fj,A.dc(A.c([A.xq(B.Wt,this.gaax(),A.xs(q,q,B.I,q,q,q,0,q,q,B.b8,q,q,B.n7,q,new A.ck(A.cM(12),B.r),q,q,q,q,q)),B.yT,new A.KU(this.gaaw(),q,q,q,A.aGN(q,q,q,q,q,q,q,q,q,B.I,q,q,B.n7,q,new A.ck(A.cM(12),B.r),B.AC,q,q,q,q),q,q,!1,q,!0,q,B.Wq,q)],r),B.D,B.t,B.bQ,0)],r),n,B.dC,B.u),q,q)}}
+return A.jM(A.bZ(A.c([m,B.bm,l,B.bm,A.cp(A.bP("Desenvolvedor Mobile focado em Flutter e Dart, criando aplica\xe7\xf5es modernas, perform\xe1ticas e integradas ao Firebase, com paix\xe3o por transformar ideias em solu\xe7\xf5es reais.",q,q,q,A.dq(q,q,B.bf,q,q,q,q,q,q,q,q,p.f,q,q,q,q,1.55,!0,q,q,q,q,q,q,q,q),o,q),q,s),B.fj,A.dc(A.c([A.xq(B.Wt,this.gaax(),A.xs(q,q,B.I,q,q,q,0,q,q,B.b8,q,q,B.n7,q,new A.ck(A.cM(12),B.r),q,q,q,q,q)),B.yT,new A.KU(this.gaaw(),q,q,q,A.aGN(q,q,q,q,q,q,q,q,q,B.I,q,q,B.n7,q,new A.ck(A.cM(12),B.r),B.AC,q,q,q,q),q,q,!1,q,!0,q,B.Wq,q)],r),B.D,B.t,B.bQ,0)],r),n,B.dC,B.u),q,q)}}
 A.D5.prototype={
 J(a){var s=null,r=A.cz(a,B.zV,B.zW,B.zU).z,q=r*0.78
 return A.cp(A.ji(B.a0,A.c([A.by(s,s,B.n,s,s,new A.bT(s,s,s,s,s,new A.p9(B.a0,0.5,B.dX,s,0,A.c([A.aF(71,B.I.C()>>>16&255,B.I.C()>>>8&255,B.I.C()&255),A.aF(5,B.I.C()>>>16&255,B.I.C()>>>8&255,B.I.C()&255)],t.t_),s,s),B.bH),s,q,s,s,s,s,q),A.arl("assets/logo_flutter.png",B.iU)],t.p),B.P,B.bU),s,r)}}
